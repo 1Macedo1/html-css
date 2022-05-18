@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em html5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e dimunia o tamanho do seu navegador.</p>
+    <p>Aqui aprendemos a redimensionar o tamanho da tela.
+        A importância disso está diretamente ligado ao tipo de aparelho que o usuário está usando.
+        Caso esteja usando um celular,tablet, notebook ou televisão deve-se configurar o tamanho de pixel.
+        E para isso no seu código deve inserir a tag &lt;picture&gt; e dentro dela vc informa &lt; source media="(max-width: AQUI INFORMA O TAMANHO DO PIXEL)" srcset="AQUI VOCÊ INFORMA O LOCAL ONDE ESTÁ O SEU ARQUIVO REFERENTE AO tamanho DO PIXEL" type="imag/ AQUI INFORMA A EXTENSÃO DO ARQUIVO DE IMAGEM"&gt;
+        Coloque sempre na ordem de cima para baixo do código informe do menor para o maior e a imagem maior vc sempre referencia na tag &lt;img src="Aqui informa o local onde está sua imagem" alt="imagem flexível"&gt;
+    </p>
+    <picture>
+        <source media="(max-width: 550px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 750px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudio.</h1>
+    <p>Vamos aprender a reproduzir áudios em html5</p>
+    <audio src="midia/godmode.mp3" controls ></audio>
+    <p>Para baixar esse áudio, <a href="midia/godmode.mp3">clique aqui</a>.</p>
+    
+</body>
+</html>

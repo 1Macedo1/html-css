@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+                        /*
+                            #  = id
+                            .  = class
+                            :  = pseudo-class
+                            :: = pseudo-element
+                            >  = filho 
+                        */
+
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: justify;
+        }
+        a{
+            color: rgb(19, 175, 19);
+            text-decoration: none; /* Esse text-decoration é o sublinhado   como                   coloquei none então ele tira o sublinhado do link.*/
+        }
+        a:visited{/* Esse visited é quando o site já foi visitado, aqle azulsinho fica mais escuro, no caso mudei a cor.. não precisa.. pode deixar sempre de uma cor, tirando essa pseudoclasse*/
+            color: darkgreen;
+        }
+        a:hover{ /* Quando passar com o mouse em cima vai aparecer o underline no link e muda de cor*/
+            text-decoration: underline;
+            color: red;
+        }
+        a:active{/* Aqui é quando for clicado mudará a cor para amarelo enqto estiver clicado em cima*/
+            color: blue;
+        }
+        .especial {
+            background-color: aquamarine;
+        }
+        .especial::before{
+            content: '⇒';
+            text-decoration: none;
+        font-weight: normal;
+        color: black;
+        }
+        .especial::after{/*Quando tem :: é um pseudo elemento que é usado na estrutura. Nesse caso estou colocando a palavra link no final de cada link avisando q é um link*/
+        content: '⇐'; /*conteúdo*/
+        text-decoration: none;
+        font-weight: normal;
+        color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.globo.com/" rel="next" target="_blank" >Site Globo</a></li>
+        <li><a href="https://www.youtube.com/channel/UCS50zhHyaQwbkCE2VgnzBLg" rel="next" target="_blank" class="especial">Canal Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/" rel="next" target="_blank" class="especial">Site Curso em vídeo</a></li>
+    </ul>
+    
+</body>
+</html>

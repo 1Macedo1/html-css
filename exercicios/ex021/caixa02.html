@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title>
+    <style>
+        body{
+            background-color: lightgreen;
+        }
+        main{
+            background-color: azure;
+            padding: 25px;
+            margin: 15px auto 15px auto;
+            border-radius: 20px; /*Para deixar os cantos da borda arredondado*/
+        }
+        header{
+            background-color: lightgrey;          
+        }
+        nav{
+            padding: 10px;
+            background-color: rgb(165, 199, 105);            
+            box-shadow: 2px 1.5px 1.5px rgba(0, 0, 0, 0.548)  ;/* SOMBRA DE CAIXA : principais parâmetros: deslocamento horizontal vertical  sombras e cor*/
+            
+        }
+        nav>a{
+            text-decoration: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            color: rgb(197, 72, 72);
+            margin-right: 50px;
+            
+        }
+        article{
+            background-color: antiquewhite;
+        }
+
+        footer{
+            background-color: lightskyblue;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            color: darkblue;
+            padding: 4px;
+        }
+        footer>p {
+            margin: 0px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <header> <!--header é o cabeçalho! -->
+            <h1>Meu site.</h1>
+            <nav><!--Menu de navegação-->
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+
+            </nav>
+    </header>
+    <main><!--Corpo do conteúdo! ou conteúdo principal-->
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia voluptatibus a, tempore qui iste nihil nisi, fuga cum reiciendis, perspiciatis laborum cumque quibusdam. Velit beatae cupiditate, ullam eius veritatis repellendus.</p>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio debitis, corrupti eum illum vero necessitatibus! Odio exercitationem dolorem similique at quaerat unde expedita. Eos assumenda aliquam expedita aut molestiae commodi.</p>
+        </article>
+
+    </main>
+    <footer><!--Rodapé-->
+        <p >Desenvolvido por William Macedo</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsivo</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        main{
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            min-width: 320px;/*Tamanho mínimo que vai ocupar em uma tela. Esse tamanho é pq é a largura de um cel pequeno e antigo*/
+            max-width:800px;/*Tamanho máximo que vai ocupar em uma tela*/
+            margin: auto; /*Isso faz com q o site não quebre*/
+        }
+        img{
+            width: 100%;/*Isso faz com que por mais que a imagem seja mto grande.. se for diminuindo a tela a imagem vai diminuindo junto*/
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        
+        <h1>Testando responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptas voluptatem, ab nam, esse ipsum dolorum quasi, id quam dolore alias! Iure odit quas error earum, perspiciatis animi iusto aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsa deleniti repudiandae omnis dolore maiores aperiam saepe dolores quod. Praesentium delectus ratione tenetur numquam, placeat iste sint. Veritatis, quaerat sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, recusandae, velit et quisquam quibusdam voluptatum veniam laboriosam, iure cupiditate reiciendis enim nesciunt molestias delectus! Officiis itaque soluta cumque repudiandae maxime.</p>
+        <picture>
+            <!--Aqui vou colocar o <source media="(min-width: )" srcset="tem que colocar o caminho na mão, o ctrl+espaço não funciona aqui"> pq ele vai trocar a imagem de acordo com o tamanho da tela.. se diminuir mto a tela vai colocar uma outra imagem -->
+            <source media="(max-width:600px )" srcset="irina-blok-pq.jpg">
+            <img src="irina-blok.jpg" alt="irina-blok">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste minus distinctio quod earum nostrum corrupti placeat tempora reiciendis in odio animi laudantium autem debitis, quasi atque impedit facere aliquid exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium a labore rem magnam molestiae mollitia officia? Quisquam recusandae quod ipsam mollitia vel illo itaque fugit, tempore, illum, ab hic ullam.</p>
+        
+    </main>
+</body>
+</html>

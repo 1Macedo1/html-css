@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <H1>Inserindo vídeos hospedados localmente.</H1>
+    peste vídeo está hospedado no meu próprio servidor.
+    <video src="midia/pexel1.mp4" width="450" height="315" controls poster="imagens/capa.png"></video>
+
+
+    <p>Nesse caso inseri a tag &lt;video&gt;, busquei o meu vídeo que criei uma pasta dentro da pasta do index, e dentro da tag video, coloquei a função width="500" controls pra diminuir o tamanho que o vídeo ocupa na minha página e a função controls serve pra vc poder dar o play no vídeo, volume... </p>
+    <p>É importante na pasta do vídeo, ter vários formatos do vídeo como mp4,ogv,webm, para que aumente a possibilidade do vídeo abrir em diversos tipos de navegadores.</p>
+    <p>Para isso, vc vai criar a tag &lt;video controls &gt; &lt; source src="O CAMINHO DO VÍDEO QUE VC VAI COLOCAR PRIMEIRO" type="VIDEO/MP4"&gt; 
+        Depois repete para os demais Vídeos &lt;video controls &gt; &lt; source src="O CAMINHO DO VÍDEO QUE VC VAI COLOCAR PRIMEIRO" type="VIDEO/MP4"&gt; 
+        Quanto mais source vc inserir, maior será a compatibilidade com o navegador.
+    </p>
+    <p>Para criar uma capa para o seu vídeo, basta vc puxar uma imagem Inserindo a função poster dentro da tag video, ficando assim: &lt;video src="Caminho do vídeo.mp4" width="500" controls poster="Caminho da imagem.png"&gt; </p>
+    
+    <video src="midia/pexel2.mp4" controls width="450" autoplay loop></video>
+    <h1>Incorporando vídeo de outro site</h1> 
+
+    <iframe width="450" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <p>Isso foi possível através do botão compartilhar do yt, lá tem na primeira opção &lt;&gt;Incorporar, é só copiar o código e colocar no seu html, como fiz nesse caso. No Vimeo tb tem essa opção.</p>
+</body>
+</html>

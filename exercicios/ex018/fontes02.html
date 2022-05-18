@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        /* Essa fonte eu busquei do site dafont.com, lá eu escolhi a fonte (tem que ficar ligado se na fonte tem todas as acentuações , maiúscula e minuscúla. Faz o download e joga na pasta onde está as páginas do seu projeto .html. Feito isso , vc cria uma regra no style 
+        --> @font-face {
+            font-family:'Aqui vc pode inventar um apelido' ;
+            src: url('coloca o nome da fonte que baixou com espaço e tudo mais') format('o tipo do formato'),se quiser outra fonte só colocar a vírgula e repetir o processo...,url('')format('');
+        }*/
+
+        @font-face {
+            font-family: 'Quartel';
+            src: url('Capture it.ttf') format('truetype');
+            /* 
+            Tipos de format()
+            -opentype (otf)
+            -truetype (ttf)
+            -embedded-opentype
+            -truetype-aat (Apple Advanced Typography)
+            -svg
+            */
+            font-weight: normal;
+            font-style: normal;
+        }
+        h1{
+            font-family: 'Quartel';
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Essa fonte é do quartel</h1>
+    <p>Baixei a fonte do título direto do site dafont.com. No código fonte desse html expliquei certinho como fazer para baixar a fonte e colocar no código.</p>
+    
+</body>
+</html>

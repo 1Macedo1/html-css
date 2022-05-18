@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <STyle>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        div>p {/* Esse símbolo quer dizer que o parágrado que está dentro da div é um filho e vai mexer só nesse filho*/
+            display: none;
+        }
+        div:hover >p {
+            display: block;
+            color: yellow;
+            background-color: blue;
+            width: 300px;
+        }
+        div:hover {
+            background-color: black;
+            color: red;
+            width: 300px;
+        }
+    </STyle>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sob o texto abaixo.</p>
+    <div>PASSE O MOUSE AQUI!
+         <p>Texto escondido......</p>
+    </div>
+ 
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixa</title>
+    <style>
+        h1{/*Box-leve*/
+            background-color: lightgreen;
+            height: 300px;
+            width: 300px;
+            border-width: 10px ; /*Largura da borda*/
+            border-style: solid;
+            border-color: darkgreen;
+            /* A ordem é largura, estilo e cor, dá pra simplificar todos esses comandos de border por
+            
+            border: 10px solid darkgreen; fazendo isso já funciona e não precisa      dos                    3 comandos*/
+            /*O Padding ele é como se fosse a borda (é o espaço entre a borda e a letra), e pra ele ser completo vc precisa informar os 4 paddings. */
+            padding-left: 100px;/*espaço entre a borda e a letra*/
+            padding-right: 10px;/*espaço entre a borda e a letra*/
+            padding-top: 10px;/*espaço entre a borda e a letra*/
+            padding-bottom: 10px;/*espaço entre a borda e a letra*/
+            /* A ordem é em cima, lado direito, embaixo, lado esquerdo, dá pra simplificar todos esses comandos de padding por
+            
+            padding: 100px 10px 10px 10px; -- Como as 4 forem iguais, basta informar apenas 1x assim--> padding: 10px ;
+
+            /*A margin é da borda pra fora.. literalmente é a margem entre uma caixa e outra*/
+            margin-top: 10px ;
+            margin-right: 0px;
+            margin-bottom: 50px ;
+            margin-left: 0px;
+            /*margin: auto; Deixa a box-level exatamente no meio da página */
+            margin: auto;
+            /*Dá tb pra simplificar a margem pra não ter q escrever os 4 cantos..e ao mesmo tempo deixar centralizado, fazendo assim:
+            margin: 10px auto 50px auto; */
+
+            /* Dá pra criar tb uma "borda" por fora da borda.. usando o outline, veja a ordem abaixo*/
+            outline-width: 15;
+            outline-style: dashed;
+            outline-color: black;
+            /*Simplificando o outline fica :
+            outline: 15 dashed black */
+        }
+        a{/*inline-level*/
+            border-width: 2px;
+            border-style: dashed;
+            border-color: red;
+        }
+        p{/*Box-leve*/
+            text-align: justify;
+            text-indent: 25px;
+            margin-bottom: 50px ;
+            margin-top: 5px;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p >Parágrafos também são exemplos de box-level, mas os <a href="#"> links são exemplos de   caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse quod sed voluptatem rerum, eligendi temporibus similique optio voluptatibus dicta pariatur repudiandae nulla vitae modi error sequi non laudantium assumenda ratione?</p>
+    
+</body>
+</html>

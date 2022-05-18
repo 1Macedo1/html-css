@@ -1,0 +1,30 @@
+Para começão a escrever htl no visual studio, digite ! e dê enter que ele já cria todo o cabeçalho.
+Importante verificar a linguagem.
+Todo o código ficará dentro do body(corpo)
+h1 -- é um título
+hr -- é uma linha que irá aparecer na tela
+p -- é de parágrado
+<!-- (até antes do parenteses vc usa para adicionar um comentário.
+&lt; -- cria o caracter de <
+&gt; -- cria o caracter de >
+**********************************************************
+Sites para buscar imagens livre de direitos autorais
+Unsplash
+pexels
+freepic
+....
+**********************************************************
+Como no html tudo que é visível na tela está em formato de caixa, cada elemento tem um nome:
+height : altura do texto
+width: largura do texto
+border: linha traçada em torno do texto
+padding: espaço entre a borda e o texto (dá pra aumentar todo ele ou só parte dele,..
+Margin : é o espaço de fora da borda
+Outline: é um tracejado criado fora da borda, na verdade é juntinho da borda, mas pelo lado de fora.(contorno ou traçado)
+
+Box-level : ele quebra a linha .. tem um texto, depois na linha de baixo um vídeo, e na linha de baixo do vídeo continua o texto..isso é box-level.
+Exemplos de onde aplicar um box-level (<div>,<h1>-<h6>,<p>,<main>,<header>,<nav>,<article>,<aside>,<footer>,<form>,<video>)
+
+Inline-level: é uma caixa dentro da própria linha do texto, ele não quebra a linha.
+Exemplos de onde aplicar a inline-level(<span>,<a>,<code>,<small>,<strong>,<em>,<sup>-<sub>,<label>,<button>,<input>,<select>)
+

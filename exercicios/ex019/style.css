@@ -1,0 +1,37 @@
+@charset "UTF-8";
+                    /*
+                    Tudo que em HTML é id em CSS é #
+                    Tudo que em HTML é class em CSS é .
+                    */
+
+body{
+    background-color: rgb(176, 236, 216);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+    color: rgb(12, 110, 79);
+}
+h1#principal{/*Puxando o h1 que criei um identificador.
+                Não Posso  criar vários identificadores como principal. Pra isso eu crio uma classe "class". Porém, o id sempre sobrepõem as configurações de classe.*/
+text-align: center;
+background: rgb(12, 110, 79);
+color: aliceblue;
+}
+h2{
+    color: rgb(10, 202, 141);
+}
+.basico{/* a class no html é referenciado como . no css então estou chamando cada classe que criei com o .e o nome da classe. Posso fazer o mesmo se eu quiser destacar uma parte do texto , basta eu criar uma tag <span class="basico" daí o texto pegará a mesma cor da classe básico q eu defini*/
+    color: chocolate;
+
+}
+.intermediario{
+    color: rgba(23, 255, 15, 0.616);
+
+}
+.avancado{
+    color: rgb(167, 223, 85);
+
+}
+.destaque{/* Posso também colocar mais de uma classe na mesma classe, basta separar com espaço, se colocar vírgula não vai funcionar*/
+    background-color: brown;
+}

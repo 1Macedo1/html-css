@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'roboto';
+    src: url('Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'idroid';
+    src: url('font/idroid.otf') format('opentype');
+}
+
+body{
+    margin: auto;
+    background-color: #D9A796;
+/* CORES PARA COLOCAR NO SITE
+.Moda-1-hex { color: #070A0D; cinza}
+.Moda-2-hex { color: #455159; preto}
+.Moda-3-hex { color: #0D8C2D; verde}
+.Moda-4-hex { color: #A66E4E; marrom}
+.Moda-5-hex { color: #D9A796; rosa}
+*/
+}
+header{
+    background: linear-gradient(to top,#455159 ,#070A0D);
+    padding-top: 30px;
+    color: aliceblue;
+    font-size: medium;
+}
+.head{
+    text-align: center;
+
+}
+ .p-principal{
+        font-size: 14px;
+        text-align: center;
+        color: aliceblue;
+            }
+p{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+    text-align: justify;
+    text-indent: 25px;
+}  
+.h{
+    margin: auto 20px;
+    font-family: 'idroid';
+    color: aliceblue;
+    text-align: justify;
+    font-size: 22px;
+
+}          
+.h2{
+    margin: auto 20px;
+    font-family: 'idroid';
+    color: aliceblue;
+    background-color: #d9a7965e;
+    font-size: 18px;
+}
+.h3{
+    
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+    background-color: #A66E4E;
+}
+nav>a{
+    text-decoration: none;    
+    color: aliceblue;
+    margin-left: 25px;
+}
+
+main{
+    
+    padding-top: 0.7px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.678); /* SOMBRA */
+    margin:  auto 220px 0px 220px;
+    background-color: #A66E4E;
+    width: auto;
+    border-radius: 0px; 
+ 
+}
+.img{
+        display:flex;
+        display: -webkit-flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.video{
+    background-color: #0D8C2D;
+    display:flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    
+    margin-left: 50px;
+    display:table-cell;
+    background-color:#D9A796;
+    border: 0px solid black; /*Largura tipo cor*/
+    text-align: justify;
+    height: auto; /*Altura*/
+    width: 900px; /*Largura*/
+    border-radius: 20px;
+}
+#esq{
+    
+    background-color: transparent;
+    text-align: left;
+    height: auto;
+    width: auto;
+    border-color: transparent;
+}
+#dir{
+    
+    background-color: transparent;
+    text-align: left;
+    height: auto;
+    width: auto;
+    border-color: transparent;
+}
+.rodape{
+    background-color:#070a0dc0 ;
+     text-align: center;   
+    color: aliceblue;
+}

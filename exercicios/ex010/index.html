@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com LINK</title>
+</head>
+<body>
+    <H1>Usando links externos</H1>
+    <p>Para criar um link, vc vai usar a tag &lt;a href=""&gt; A letra a é de âncora e o href é de referência do hyperlink</p>
+    <br>
+    <p>Você pode acessar o meu <a href="https://github.com/gustavoguanabara/">repositório público no GitHub</a></p>
+    <p>Note que no link acima, o site do link sobrepõe o seu site e para isso não acontecer, basta vc colocar target="_blank" rel="external " após o endereço do link.. ficando assim: <code>&lt;a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" target="_blank" rel="external"&gt;</code> </p>
+    <p>Ou acesse o canal do <a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" target="_blank" rel="external">Curso em Vídeo</a> pelo youtube.. </p>
+    <h2>Usando links Internos</h2>
+    <p>Esta é a primeira página do site. Se você quiser, pode também <a href="pag002.html" rel="next" target="_self"> acessar a minha segunda página.</a></p>
+    <p><i>nesse caso usou a mesma tag &lt;a href&gt; e por ser um link interno, ele busca o arquivo html dentro da mesma pasta, basta dar um control+espaço dentro do "" do href que vai aparecer as opções para você lincar. Daí vc usa rel="next" target="_self". O self quer dizer na própria aba.</i></p>
+    <br>
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p>
+
+    <h1>Links para download</h1>
+    <h2>Livros :</h2>
+    <ul type="square">
+        <li><a href="livros/O Poder da Ação.pdf" download="O poder da ação.pdf" type="application/pdf">O poder da ação</a> </li>
+        <li><a href="livros/O-Milagre-Da-Manha.zip" download="O-Milagre-Da-Manha.zip" type="application/zip" >O milagre da manhã.</a> (zip)</li>
+    </ul>
+    <p>Para fazer o download tb é necessário fazer a referência de onde está o arquivo e informar o tipo, dessa forma: <code>&lt;a href="O CAMINHO DE ONDE ESTÁ O ARQUIVO" download="O NOME DO ARQUIVO" type="application/zip" > o NOME QUE FICARÁ VISÍVEL NA TELA COMO LINK PARA DOWNLOAD./&gt;</code></p>
+    <p>Para saber como informar o tipo para fazer download, acesse esse site <a href="https://www.iana.org/assignments/media-types/media-types.xhtml">https://www.iana.org/assignments/media-types/media-types.xhtml</a> lá tem todos os tipos de arquivos e como colocar no seu código </p>
+</body>
+</html>
