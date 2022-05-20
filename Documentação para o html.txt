@@ -28,3 +28,8 @@ Exemplos de onde aplicar um box-level (<div>,<h1>-<h6>,<p>,<main>,<header>,<nav>
 Inline-level: é uma caixa dentro da própria linha do texto, ele não quebra a linha.
 Exemplos de onde aplicar a inline-level(<span>,<a>,<code>,<small>,<strong>,<em>,<sup>-<sub>,<label>,<button>,<input>,<select>)
 
+A shorthand - background vai ser sempre nessa ordem :
+color > image > position > repeat > size > attachment ;
+
+Talvez o size não vá funcionar, caso não funcione, declare ele separado através do
+background-size: auto; ou cover..

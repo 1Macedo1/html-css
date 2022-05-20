@@ -1,0 +1,103 @@
+@charset "UTF8";
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    font-family: sans-serif;
+}
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+main{
+    display: block;
+    background-color: white;
+}
+.container{
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+section.module p{
+    margin-bottom:40px ;
+}
+section.module :last-child{
+    margin-bottom: 0;
+}
+section.conteudo {
+    background-color: lightcyan;
+}
+.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+section.parallax::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom,rgba(0,0,0,0)0 , rgba(0,0,0,0)40%, #000 100%);
+}
+section.parallax{
+    background-image: url(imagens/pexels-photo-116914.jpeg);
+}
+
+section.parallax2{
+    background-image: url(imagens/pexels-photo-1108572.jpeg);
+}
+.parallax2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+section.parallax2::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom,rgba(0,0,0,0)0 , rgba(0,0,0,0)40%, #000 100%);
+}
+section.parallax3{
+    background-image: url(imagens/pexels-photo-2889685.webp);
+}
+.parallax3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+section.parallax3::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom,rgba(0,0,0,0)0 , rgba(0,0,0,0)40%, #000 100%);
+}

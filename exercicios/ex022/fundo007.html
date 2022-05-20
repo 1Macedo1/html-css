@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        /*Quando for fazer alinhamento vertical de imagens, sempre tem q ter o container e o conteúdo.*/
+        #container{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: relative;
+            height: 95vh;
+            padding: 10px;
+            background-color: purple;
+        }
+        #conteudo{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: absolute; /*Quando se coloca essa propriedade, vc pode colocar as demais orientações.. left, top,right, bottom*/
+            left:50%;
+            top: 50%;
+            height: 200px ;
+            width: 400px;
+            background-color: yellow;
+            /*Como a imagem do alvo ficou fora da escala central, a tag q resolve isso é a transform: translate(); , sendo q a caracteristica positiva dela é pra direita e pra baixo(direita tb) e a negativa é pra esquerda e pra baixo(esquerda tb) conforme abaixo:*/
+            transform: translate(-50%, -50%);
+
+        }
+    </style>
+    
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
