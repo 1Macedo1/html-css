@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        .cnome{
+            background-color: lightgreen;
+        }
+        .cgrupo{
+            background-color: lightskyblue;
+        }
+        .vermelho{
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de tabelas</h1>
+    <table>
+        <!--Pra eu selecionar uma tabela inteira, basta eu usar a tag colgorup-->
+        <colgroup><!--E dentro de cada tag col eu crio uma classe -->
+            <col class="cnome"><!--E identifico a que eu quero como eu quero-->
+            <col class="cgrupo" span="2"><!--Essa configuração eu pego 2 colunas, por isso apaguei a coluna da idade e do sexo-->
+    
+            <col class="vermelho"><!--Com a tag colgroup eu não preciso usar os mesmos nomes das colunas, posso apenas criar uma classe com qqr nome no local da coluna que já o identifica, como nesse caso da profissão-->
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+             <th scope="col">Nome</th>
+             <th scope="col">Sexo</th>
+             <th scope="col">Idade</th>
+             <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>F</td>
+            <td>22</td>
+            <td>Atriz</td>
+        </tr>
+        <tr>
+            <td>Paulo</td>
+            <td>M</td>
+            <td>18</td>
+            <td>Soldado</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>45</td>
+            <td>Aposentada</td>
+        </tr>
+        <tr>
+            <td>Túlio</td>
+            <td>M</td>
+            <td>33</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Keila</td>
+            <td>F</td>
+            <td>39</td>
+            <td>Secretária</td>
+        </tr>
+        <tr>
+            <td>Marcelo</td>
+            <td>M</td>
+            <td>41</td>
+            <td>Pedreiro</td>
+        </tr>
+
+    </table>
+    
+</body>
+</html>
